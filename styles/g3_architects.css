@@ -2,9 +2,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.work-sans-font{
+.work-sans-fonts{
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
+/* shared Style */
+.display-flex{
+    display: flex;
+}
+.dark-1{
+    color: rgb(19, 19, 19);
+}
+.dark-2{
+    color: #424242;
+}
+.dark-3{
+   color: #727272 ;
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+/* Nav style */
+.brand{
+    font-weight: 700;
+    font-size: 2.98rem;
+}
+.bg-color{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-links{
+    list-style: none;
+    gap: 10px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.navbar, .banner{
+    border: 2px solid tomato;
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.banner-text-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4.2rem;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.banner-image-container{
+    border: 2px solid green;
+    width: 100%;
+    margin: 0 auto;
+
+}
+/* feature */
+#title-styles-1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #727272;
+}
+#title-styles-2{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #131313;
+}
+#title-styles-3{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #FF900E;
+}
+.feature{
+    border: 2px solid tomato;
+    margin: 5rem 10rem;
+    gap: 2rem;
+}
+.feature-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.feature-text-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* responsive */
+@media screen and (max-width: 576px){
+    .navbar, .nav-links{
+        flex-direction: column;
+    }    
+} 
+
+
